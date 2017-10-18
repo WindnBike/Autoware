@@ -1,8 +1,8 @@
 <!-- -->
 <launch>
-  <arg name="sensor_frame" default="/base_link" />
-  <arg name="input0" default="/lidar0/points_raw" />
-  <arg name="input1" default="/lidar1/points_raw" />
+  <arg name="sensor_frame" default="/lidar_base" />
+  <arg name="input0" default="/front/velodyne_points" />
+  <arg name="input1" default="/rear/velodyne_points" />
   <arg name="output" default="/points_concat" />
 
   <node pkg="points_preprocessor" type="points_concat_filter"
