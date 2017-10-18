@@ -10,6 +10,6 @@
     <param name="sensor_frame" value="$(arg sensor_frame)" />
     <remap from="/lidar0/points_raw" to="$(arg input0)" />
     <remap from="/lidar1/points_raw" to="$(arg input1)" />
-    <remap from="/points_raw" to="$(arg output)" />
+    <remap from="/points_concat" to="$(arg output)" />
   </node>
 </launch>
